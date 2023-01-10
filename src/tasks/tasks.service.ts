@@ -18,8 +18,8 @@ export class TasksService {
     return this.taskModel.find();
   }
 
-  findOne(name: string) {
-    return this.taskModel.findOne({name : name });
+  findOne(id: number) {
+    return this.taskModel.findOne({ _id : id });
   }
 
   update(id: number, updateTaskDto: UpdateTaskDto) {

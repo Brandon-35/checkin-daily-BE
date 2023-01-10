@@ -17,9 +17,9 @@ export class TasksController {
     return this.tasksService.findAll();
   }
 
-  @Get(':name')
-  findOne(@Param('name') name: string) {
-    return this.tasksService.findOne(name);
+  @Get(':id')
+  findOne(@Param('id') id: number) {
+    return this.tasksService.findOne(id);
   }
 
   @Patch(':id')
